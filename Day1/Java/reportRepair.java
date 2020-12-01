@@ -29,7 +29,18 @@ public class reportRepair
                 datos.add(añadir);
             }
 
-            //Tratado de datos
+            //Tratado de datos 1
+            for(int i = 0; i < datos.size(); i++) {
+                for (int j = i; j < datos.size(); j++) {
+                    if (datos.get(i) + datos.get(j) == 2020) {
+                        System.out.println(datos.get(i) * datos.get(j));
+                    }
+                    
+                    
+                }
+            }
+
+            //Tratado de datos 2
             for(int i = 0; i < datos.size(); i++) {
                 for (int j = i; j < datos.size(); j++) {
                     for(int k = j; k < datos.size(); k++) {

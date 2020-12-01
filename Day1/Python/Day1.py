@@ -1,6 +1,6 @@
 
 # Abrir el archivo
-file = open('/Users/jordiros27/Desktop/AdventOfCode2020/Python/datos.txt', 'r')
+file = open('/Users/jordiros27/Desktop/AdventOfCodePython/venv/datos.txt', 'r')
 
 datos = []
 
@@ -8,8 +8,13 @@ datos = []
 for line in file:
     datos.append(int(line.strip()))
 
-for i in datos:
-    for j in datos:
-        for k in datos:
-            if i + j + k == 2020:
-                print(i * j * k)
+for i in range(len(datos)):
+    for j in range(len(datos)):
+        if datos[i] + datos[j] == 2020:
+            print(datos[i] * datos[j])
+
+for i in range(len(datos)):
+    for j in range(len(datos)):
+        for k in range(len(datos)):
+            if datos[i] + datos[j] + datos[k] == 2020:
+                print(datos[i] * datos[j] * datos[k])
