@@ -1,6 +1,6 @@
 
 # Abrir el archivo
-file = open('/Users/jordiros27/Desktop/AdventOfCodePython/venv/datos.txt', 'r')
+file = open('/Users/jordiros27/Desktop/AdventOfCode2020/Day1/datosDay1.txt', 'r')
 
 datos = []
 
